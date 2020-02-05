@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SectionE"
+    tools:ignore="HardcodedText"
+    tools:showIn="@layout/activity_section_e">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Section E : Entrepreneurial Behaviour"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:text="36.	Kindly indicate, on a level of 0 to 3, 0 (not all) to 3 (Great Extent) your level of agreement with the following statements."
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="I generally invent new approaches to create value in my bee keeping practice  " />
+
+        <RadioGroup
+            android:id="@+id/rg_inventive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_inventive"
+                android:text="0 (Not at all)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:onClick="rg_inventive"
+                android:layout_height="match_parent"
+                android:text="1 (Small Extent)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:onClick="rg_inventive"
+                android:layout_height="match_parent"
+                android:text="2 (Moderate extent)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:onClick="rg_inventive"
+                android:layout_height="match_parent"
+                android:text="3 (Great Extent)" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="I have expanded my output to have a change at making higher profits" />
+
+        <RadioGroup
+            android:id="@+id/rg_expanded_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:onClick="rg_expanded_output"
+                android:layout_height="match_parent"
+                android:text="0 (Not at all)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:onClick="rg_expanded_output"
+                android:layout_height="match_parent"
+                android:text="1 (Small Extent)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_expanded_output"
+                android:text="2 (Moderate extent)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_expanded_output"
+                android:text="3 (Great Extent)" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="I am able to quickly and effectively make decisions regarding various aspects of my farming practice" />
+
+        <RadioGroup
+
+            android:id="@+id/rg_quick_decisions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_quick_decisions"
+                android:text="0 (Not at all)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_quick_decisions"
+                android:text="1 (Small Extent)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_quick_decisions"
+                android:text="2 (Moderate extent)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_quick_decisions"
+                android:text="3 (Great Extent)" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="I set specific goals and seek to fulfil them" />
+
+        <RadioGroup
+
+            android:id="@+id/rg_set_goals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_set_goals"
+                android:text="0 (Not at all)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_set_goals"
+                android:text="1 (Small Extent)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_set_goals"
+                android:text="2 (Moderate extent)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:onClick="rg_set_goals"
+                android:layout_height="match_parent"
+                android:text="3 (Great Extent)" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="I can effectively schedule the tasks involved in bee farming." />
+
+        <RadioGroup
+
+            android:id="@+id/rg_schedule_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_schedule_tasks"
+                android:text="0 (Not at all)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_schedule_tasks"
+                android:text="1 (Small Extent)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_schedule_tasks"
+                android:text="2 (Moderate extent)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_schedule_tasks"
+                android:text="3 (Great Extent)" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="I take my time to seek out information (e.g. from the media) on more effective approaches to farming." />
+
+        <RadioGroup
+
+            android:id="@+id/rg_seek_out_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_seek_out_info"
+                android:text="0 (Not at all)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_seek_out_info"
+                android:text="1 (Small Extent)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_seek_out_info"
+                android:text="2 (Moderate extent)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_seek_out_info"
+                android:text="3 (Great Extent)" />
+
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/motivation_to_start_e_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/collectors_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Data Collector's name"
+              >
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/rg_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@color/colorPrimary"
+            android:text="Finish"
+            android:onClick="onSubmit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Vanguard</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_section_b">SectionB</string>
+    <string name="title_activity_section_b2">SectionB2</string>
+    <string name="title_activity_section_c">SectionC</string>
+    <string name="title_activity_section_d">SectionD</string>
+    <string name="title_activity_section_e">SectionE</string>
+    <string name="title_activity_complete">Complete</string>
+</resources>

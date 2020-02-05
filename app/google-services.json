@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "330875652131",
+    "firebase_url": "https://vanguardapp-d0941.firebaseio.com",
+    "project_id": "vanguardapp-d0941",
+    "storage_bucket": "vanguardapp-d0941.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330875652131:android:7c229db5c84ffb02de4996",
+        "android_client_info": {
+          "package_name": "com.vanguardswift.vanguardapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330875652131-c1rgdl595n6f8hlunvko4t8he76kgscq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vanguardswift.vanguardapp",
+            "certificate_hash": "2915a4d9ffd8eecd1028bce7a7db5eada4952fd6"
+          }
+        },
+        {
+          "client_id": "330875652131-h0b7hl5v76j93sm1d8pjvu39hnsekha0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfC-UkcHRpyV8l_YZGJ3VNOakfGffjR4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330875652131-h0b7hl5v76j93sm1d8pjvu39hnsekha0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
