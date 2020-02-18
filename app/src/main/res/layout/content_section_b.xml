@@ -15,73 +15,36 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
+
         <TextView
 
             style="@android:style/TextAppearance.Large"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Section B"
+            android:text="Section B: Socio-Economic Characteristics"
             android:textAlignment="center"
             android:textColor="@color/black" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:layout_marginBottom="12dp"
-            android:text="Do you have an apiary?"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <RadioGroup
-            android:id="@+id/rg_apiary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-
-            <RadioButton
-                android:id="@+id/rb_apiary_yes"
-                android:onClick="rg_apiary"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Yes" />
-
-            <RadioButton
-                android:id="@+id/rb_apiary_no"
-                android:onClick="rg_apiary"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="No" />
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
-            android:text="Information on Beehives"
+            android:text="Annual Income (KES)"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Traditional log beehive"
-            android:textColor="@color/black" />
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/traditional_number_of_hives_label"
+            android:id="@+id/bee_keeping_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/traditional_number_of_hives"
+                android:id="@+id/bee_keeping"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Number of hives"
+                android:maxLength="12"
+                android:hint="Bee Keeping"
                 android:inputType="number">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -90,15 +53,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/traditional_yield_s1_label"
+            android:id="@+id/other_farming_activities_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/traditional_yield_s1"
+                android:id="@+id/other_farming_activities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Honey yield Season 1 (kg)"
+                android:maxLength="12"
+                android:hint="Other On-Farm Activities"
                 android:inputType="number">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -107,15 +71,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/traditional_yield_s2_label"
+            android:id="@+id/off_farm_activities_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/traditional_yield_s2"
+                android:id="@+id/off_farm_activities_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Honey yield Season 2 (kg)"
+                android:maxLength="12"
+                android:hint="Off Farm Activities"
                 android:inputType="number">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -124,234 +89,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/traditional_harvests_per_year_label"
+            android:id="@+id/farm_size_label"
             android:layout_width="match_parent"
+            android:layout_marginTop="36dp"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/traditional_harvests_per_year"
+                android:id="@+id/farm_size_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Harvests per year"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Langstroth beehive"
-            android:textColor="@color/black" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/langstroth_number_of_hives_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/langstroth_number_of_hives"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Number of hives"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/langstroth_yield_s1_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/langstroth_yield_s1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Honey yield Season 1 (kg)"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/langstroth_yield_s2_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/langstroth_yield_s2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Honey yield Season 2 (kg)"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/langstroth_harvests_per_year_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/langstroth_harvests_per_year"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Harvests per year"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Kenya Top beehive"
-            android:textColor="@color/black" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/kenya_top_number_of_hives_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/kenya_top_number_of_hives"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Number of hives"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/kenya_top_yield_s1_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/kenya_top_yield_s1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Honey yield Season 1 (kg)"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/kenya_top_yield_s2_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/kenya_top_yield_s2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Honey yield Season 2 (kg)"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/kenya_top_harvests_per_year_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/kenya_top_harvests_per_year"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Harvests per year"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Kalpulkul"
-            android:textColor="@color/black" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/kal_number_of_hives_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/kal_number_of_hives"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Number of hives"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/kal_yield_s1_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/kal_yield_s1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Honey yield Season 1 (kg)"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/kal_yield_s2_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/kal_yield_s2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Honey yield Season 2 (kg)"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/kal_harvests_per_year_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/kal_harvests_per_year"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Harvests per year"
+                android:hint="Farm size (acres)"
                 android:inputType="number">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -361,605 +108,411 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
-            android:text="Beekeeping Tools and Equipment"
+            android:text="Level of Social Participation"
             android:textColor="@color/black"
             android:textSize="18sp" />
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Bee smoker"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Do you use it?" />
+            android:text="Bee farmers group" />
 
         <RadioGroup
-            android:id="@+id/rg_use_bee_smoker"
+            android:id="@+id/rg_social_bee_farmers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             >
 
             <RadioButton
-                android:id="@+id/rb_use_bee_smoker_yes"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="rg_use_bee_smoker"
-                android:text="Yes" />
+                android:onClick="rg_social_bee_farmers"
+                android:text="Never (1)" />
 
             <RadioButton
-                android:id="@+id/rb_use_bee_smoker_no"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_use_bee_smoker"
-                android:layout_weight="1"
-                android:text="No" />
+                android:onClick="rg_social_bee_farmers"
+                android:text="Sometimes (2)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_social_bee_farmers"
+                android:text="Most of the time (3)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_social_bee_farmers"
+                android:text="Always (4)" />
+
 
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="If yes, how do you get it?" />
+            android:layout_marginTop="12dp"
+            android:text="Bee keeping co-operative" />
 
         <RadioGroup
-            android:id="@+id/rg_get_bee_smoker"
+            android:id="@+id/rg_social_co_op"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             >
 
             <RadioButton
-                android:id="@+id/rb_bee_smoker_own"
-                android:onClick="rg_get_bee_smoker"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="own" />
+                android:onClick="rg_social_co_op"
+                android:text="Never (1)" />
 
             <RadioButton
-                android:id="@+id/rb_bee_smoker_borrow"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_get_bee_smoker"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="borrow" />
+                android:onClick="rg_social_co_op"
+                android:text="Sometimes (2)" />
 
             <RadioButton
-                android:id="@+id/rb_bee_smoker_share"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_get_bee_smoker"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="share" />
+                android:onClick="rg_social_co_op"
+                android:text="Most of the time (3)" />
 
             <RadioButton
-                android:id="@+id/rb_bee_smoker_hire"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_get_bee_smoker"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="hire" />
+                android:onClick="rg_social_co_op"
+                android:text="Always (4)" />
+
 
         </RadioGroup>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="Brush"
-            android:textColor="@color/black" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Do you use it?" />
+            android:layout_marginTop="12dp"
+            android:text="Bulk buyer farmers group" />
 
         <RadioGroup
-            android:id="@+id/rg_use_brush"
+            android:id="@+id/rg_social_farmers_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             >
 
             <RadioButton
-                android:id="@+id/rb_use_brush_yes"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_use_brush"
-                android:layout_weight="1"
-                android:text="Yes" />
+                android:onClick="rg_social_farmers_group"
+                android:text="Never (1)" />
 
             <RadioButton
-                android:id="@+id/rb_use_brush_no"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_use_brush"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="No" />
+                android:onClick="rg_social_farmers_group"
+                android:text="Sometimes (2)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_social_farmers_group"
+                android:text="Most of the time (3)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_social_farmers_group"
+                android:text="Always (4)" />
+
 
         </RadioGroup>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="If yes, how do you get it?" />
+            android:layout_marginTop="12dp"
+            android:text="NGO" />
 
         <RadioGroup
-            android:id="@+id/rg_get_brush"
+            android:id="@+id/rg_social_ngo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             >
 
             <RadioButton
-                android:id="@+id/rb_brush_own"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_get_brush"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="own" />
+                android:onClick="rg_social_ngo"
+                android:text="Never (1)" />
 
             <RadioButton
-                android:id="@+id/rb_brush_borrow"
-                android:onClick="rg_get_brush"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="borrow" />
+                android:onClick="rg_social_ngo"
+                android:text="Sometimes (2)" />
 
             <RadioButton
-                android:id="@+id/rb_brush_share"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_get_brush"
-                android:layout_weight="1"
-                android:text="share" />
+                android:onClick="rg_social_ngo"
+                android:text="Most of the time (3)" />
 
             <RadioButton
-                android:id="@+id/rb_brush_hire"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_get_brush"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="hire" />
+                android:onClick="rg_social_ngo"
+                android:text="Always (4)" />
+
 
         </RadioGroup>
 
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="Knife / hive tool"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Do you use it?" />
+            android:layout_marginTop="12dp"
+            android:text="Savings Group" />
 
         <RadioGroup
-            android:id="@+id/rg_use_knife"
+            android:id="@+id/rg_social_savings_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             >
 
             <RadioButton
-                android:id="@+id/rb_use_knife_yes"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_use_knife"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Yes" />
+                android:onClick="rg_social_savings_group"
+                android:text="Never (1)" />
 
             <RadioButton
-                android:id="@+id/rb_use_knife_no"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_use_knife"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="No" />
+                android:onClick="rg_social_savings_group"
+                android:text="Sometimes (2)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_social_savings_group"
+                android:text="Most of the time (3)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_social_savings_group"
+                android:text="Always (4)" />
+
 
         </RadioGroup>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="If yes, how do you get it?" />
+            android:layout_marginTop="48dp"
+            android:text="Level of participation in beekeeping extension activities"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
-        <RadioGroup
-            android:id="@+id/rg_get_knife"
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:text="Beekeeping training program" />
+
+        <RadioGroup
+            android:id="@+id/rg_beekeeping_training"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             >
 
             <RadioButton
-                android:id="@+id/rb_knife_own"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_get_knife"
-                android:layout_weight="1"
-                android:text="own" />
+                android:onClick="rg_beekeeping_training"
+                android:text="Never (1)" />
 
             <RadioButton
-                android:id="@+id/rb_knife_borrow"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_get_knife"
-                android:layout_weight="1"
-                android:text="borrow" />
+                android:onClick="rg_beekeeping_training"
+                android:text="Sometimes (2)" />
 
             <RadioButton
-                android:id="@+id/rb_knife_share"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_get_knife"
-                android:layout_weight="1"
-                android:text="share" />
+                android:onClick="rg_beekeeping_training"
+                android:text="Most of the time (3)" />
 
             <RadioButton
-                android:id="@+id/rb_knife_hire"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_get_knife"
-                android:layout_weight="1"
-                android:text="hire" />
+                android:onClick="rg_beekeeping_training"
+                android:text="Always (4)" />
+
+
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="Protective bee keeping suit"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Do you use it?" />
+            android:layout_marginTop="12dp"
+            android:text="Field visits to other bee farms" />
 
         <RadioGroup
-            android:id="@+id/rg_use_suit"
-
+            android:id="@+id/rg_field_visits"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            >
 
             <RadioButton
-                android:id="@+id/rb_use_suit_yes"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_use_suit"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Yes" />
+                android:onClick="rg_field_visits"
+                android:text="Never (1)" />
 
             <RadioButton
-                android:id="@+id/rb_use_suit_no"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_use_suit"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="No" />
+                android:onClick="rg_field_visits"
+                android:text="Sometimes (2)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_field_visits"
+                android:text="Most of the time (3)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_field_visits"
+                android:text="Always (4)" />
+
 
         </RadioGroup>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="If yes, how do you get it?" />
+            android:layout_marginTop="12dp"
+            android:text="Demonstration on beekeeping" />
 
         <RadioGroup
-            android:id="@+id/rg_get_suit"
-
+            android:id="@+id/rg_demonstration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            >
 
             <RadioButton
-                android:id="@+id/rb_suit_own"
-                android:onClick="rg_get_suit"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="own" />
+                android:onClick="rg_demonstration"
+                android:text="Never (1)" />
 
             <RadioButton
-                android:id="@+id/rb_suit_borrow"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_get_suit"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="borrow" />
+                android:onClick="rg_demonstration"
+                android:text="Sometimes (2)" />
 
             <RadioButton
-                android:id="@+id/rb_suit_share"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_get_suit"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="share" />
+                android:onClick="rg_demonstration"
+                android:text="Most of the time (3)" />
 
             <RadioButton
-                android:id="@+id/rb_suit_hire"
+
                 android:layout_width="wrap_content"
-                android:onClick="rg_get_suit"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="hire" />
+                android:onClick="rg_demonstration"
+                android:text="Always (4)" />
 
 
         </RadioGroup>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="Plastic gum boots"
-            android:textColor="@color/black" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Do you use it?" />
+            android:layout_marginTop="12dp"
+            android:text="Business or entrepreneurship training" />
 
         <RadioGroup
-            android:id="@+id/rg_use_boots"
-
+            android:id="@+id/rg_business"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            >
 
             <RadioButton
-                android:id="@+id/rb_use_boots_yes"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_use_boots"
-                android:layout_weight="1"
-                android:text="Yes" />
+                android:onClick="rg_business"
+                android:text="Never (1)" />
 
             <RadioButton
-                android:id="@+id/rb_use_boots_no"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_use_boots"
-                android:layout_weight="1"
-                android:text="No" />
+                android:onClick="rg_business"
+                android:text="Sometimes (2)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_business"
+                android:text="Most of the time (3)" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_business"
+                android:text="Always (4)" />
+
 
         </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="If yes, how do you get it?" />
-
-        <RadioGroup
-            android:id="@+id/rg_get_boots"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rb_boots_own"
-                android:layout_width="wrap_content"
-                android:onClick="rg_get_boots"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="own" />
-
-            <RadioButton
-                android:id="@+id/rb_boots_borrow"
-                android:layout_width="wrap_content"
-                android:onClick="rg_get_boots"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="borrow" />
-
-            <RadioButton
-                android:id="@+id/rb_boots_share"
-                android:layout_width="wrap_content"
-                android:onClick="rg_get_boots"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="share" />
-
-            <RadioButton
-                android:id="@+id/rb_boots_hire"
-                android:layout_width="wrap_content"
-                android:onClick="rg_get_boots"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="hire" />
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="Plastic containers"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Do you use it?" />
-
-        <RadioGroup
-            android:id="@+id/rg_use_containers"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rb_use_containers_yes"
-                android:onClick="rg_use_containers"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Yes" />
-
-            <RadioButton
-                android:id="@+id/rb_use_containers_no"
-                android:onClick="rg_use_containers"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="No" />
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="If yes, how do you get it?" />
-
-        <RadioGroup
-            android:id="@+id/rg_get_containers"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rb_containers_own"
-                android:onClick="rg_get_containers"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="own" />
-
-            <RadioButton
-                android:id="@+id/rb_containers_borrow"
-                android:onClick="rg_get_containers"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="borrow" />
-
-            <RadioButton
-                android:id="@+id/rb_containers_share"
-                android:onClick="rg_get_containers"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="share" />
-
-            <RadioButton
-                android:id="@+id/rb_containers_hire"
-                android:onClick="rg_get_containers"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="hire" />
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="Honey extractor"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Do you use it?" />
-
-        <RadioGroup
-            android:id="@+id/rg_use_extractor"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rb_use_extractor_yes"
-                android:onClick="rg_use_extractor"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Yes" />
-
-            <RadioButton
-                android:id="@+id/rb_use_extractor_no"
-                android:onClick="rg_use_extractor"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="No" />
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="If yes, how do you get it?" />
-
-        <RadioGroup
-            android:id="@+id/rg_get_extractor"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rb_extractor_own"
-                android:layout_width="wrap_content"
-                android:onClick="rg_get_extractor"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="own" />
-
-            <RadioButton
-                android:id="@+id/rb_extractor_borrow"
-                android:layout_width="wrap_content"
-                android:onClick="rg_get_extractor"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="borrow" />
-
-            <RadioButton
-                android:id="@+id/rb_extractor_share"
-                android:layout_width="wrap_content"
-                android:onClick="rg_get_extractor"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="share" />
-
-            <RadioButton
-                android:id="@+id/rb_extractor_hire"
-                android:layout_width="wrap_content"
-                android:onClick="rg_get_extractor"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="hire" />
-        </RadioGroup>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/other_equipment_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/other_equipment_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Others (please specify)">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
@@ -969,7 +522,7 @@
             android:layout_marginTop="48dp"
             android:onClick="onSubmit"
             android:background="@color/colorPrimary"
-            android:text="Proceed to Section B Part 2   "
+            android:text="Proceed to Section C"
             android:textColor="@color/white" />
 
     </LinearLayout>

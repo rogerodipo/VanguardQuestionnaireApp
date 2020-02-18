@@ -21,20 +21,22 @@
         <TextView
 
             style="@android:style/TextAppearance.Large"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Section A"
+            android:text="Section A : Personal Characteristics"
             android:textAlignment="center" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/name_label"
             android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxLength="3"
                 android:inputType="number"
                 android:hint="Age">
 
@@ -81,6 +83,7 @@
                 android:id="@+id/school_years"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxLength="2"
                 android:inputType="number"
                 android:hint="Number of years of schooling">
 
@@ -104,6 +107,7 @@
                 android:id="@+id/men"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxLength="3"
                 android:hint="Men"
                 android:inputType="number">
 
@@ -119,6 +123,7 @@
                 android:id="@+id/women"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxLength="3"
                 android:hint="Women"
                 android:inputType="number">
 
@@ -135,6 +140,7 @@
                 android:id="@+id/children"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxLength="3"
                 android:hint="Children"
                 android:inputType="number">
 
@@ -147,141 +153,17 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/farm_size"
+                android:id="@+id/farming_years_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Farm size (acres)"
+                android:maxLength="3"
+                android:hint="Years engaged in farming"
                 android:inputType="number">
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:text="Annual Income (KES)"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Bee Keeping"
-            android:textColor="@color/black" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/bee_keeping_s1_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/bee_keeping_s1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Season 1"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/bee_keeping_s2_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/bee_keeping_s2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Season 2"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Other farming activities"
-            android:textColor="@color/black" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/other_farming_activities_s1_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/other_farming_activities_s1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Season 1"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/other_farming_activities_s2_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/other_farming_activities_s2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Season 2"
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/off_farm_activities_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/off_farm_activities"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Off farm activities (KES)"
-
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/years_farming_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/years_farming"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Number of years engaged in bee farming"
-
-                android:inputType="number">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/proceed_to_section_B"

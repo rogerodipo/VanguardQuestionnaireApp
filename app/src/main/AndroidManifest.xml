@@ -31,10 +31,6 @@
             android:label="@string/title_activity_section_c"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SectionB2"
-            android:label="@string/title_activity_section_b2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".SectionB"
             android:label="@string/title_activity_section_b"
             android:theme="@style/AppTheme.NoActionBar" />

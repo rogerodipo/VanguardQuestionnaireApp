@@ -14,7 +14,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 
 import com.google.firebase.database.DatabaseReference;
@@ -36,18 +35,6 @@ public class SectionA extends AppCompatActivity {
     EditText familySizeWomenEditText;
     String familySizeChildren = "";
     EditText familySizeChildrenEditText;
-    String farmSize = "";
-    EditText farmSizeEditText;
-    String beeKeepingIncomeS1 = "";
-    EditText beeKeepingIncomeS1EditText;
-    String beeKeepingIncomeS2 = "";
-    EditText beeKeepingIncomeS2EditText;
-    String otherActivitiesIncomeS1= "" ;
-    EditText otherActivitiesS1EditText;
-    String otherActivitiesIncomeS2 = "";
-    EditText otherActivitiesS2EditText;
-    String offFarmActivitiesIncome = "";
-    EditText offFarmActivitiesEditText;
     String yearsFarming = "";
     EditText yearsFarmingEditText;
 
@@ -71,13 +58,8 @@ public class SectionA extends AppCompatActivity {
         familySizeMenEditText =  findViewById(R.id.men);
         familySizeWomenEditText =  findViewById(R.id.women);
         familySizeChildrenEditText =  findViewById(R.id.children);
-        farmSizeEditText = findViewById(R.id.farm_size);
-        beeKeepingIncomeS1EditText = findViewById(R.id.bee_keeping_s1);
-        beeKeepingIncomeS2EditText = findViewById(R.id.bee_keeping_s2);
-        otherActivitiesS1EditText = findViewById(R.id.other_farming_activities_s1);
-        otherActivitiesS2EditText = findViewById(R.id.other_farming_activities_s2);
-        offFarmActivitiesEditText = findViewById(R.id.off_farm_activities);
-        yearsFarmingEditText = findViewById(R.id.years_farming);
+        yearsFarmingEditText = findViewById(R.id.farming_years_text);
+
 
 
     }
@@ -116,19 +98,13 @@ public class SectionA extends AppCompatActivity {
         familySizeMen = familySizeMenEditText.getText().toString();
         familySizeWomen = familySizeWomenEditText.getText().toString();
         familySizeChildren = familySizeChildrenEditText.getText().toString();
-        farmSize = farmSizeEditText.getText().toString();
-        beeKeepingIncomeS1 = beeKeepingIncomeS1EditText.getText().toString();
-        beeKeepingIncomeS2 = beeKeepingIncomeS2EditText.getText().toString();
-        otherActivitiesIncomeS1 = otherActivitiesS1EditText.getText().toString();
-        otherActivitiesIncomeS2 = otherActivitiesS2EditText.getText().toString();
-        offFarmActivitiesIncome = offFarmActivitiesEditText.getText().toString();
         yearsFarming = yearsFarmingEditText.getText().toString();
 
         responseId = vanguardDb.push().getKey();
         SharedPreferences preferences = this.getSharedPreferences("com.vanguardswift.vanguardapp", Context.MODE_PRIVATE);
         preferences.edit().putString("responseId",responseId).apply();
 
-        ResponseA response = new ResponseA(age, gender, schoolYears, familySizeMen, familySizeWomen, familySizeChildren, farmSize, beeKeepingIncomeS1, beeKeepingIncomeS2, otherActivitiesIncomeS1, otherActivitiesIncomeS2, offFarmActivitiesIncome, yearsFarming);
+        ResponseA response = new ResponseA(age, gender, schoolYears, familySizeMen, familySizeWomen, familySizeChildren, yearsFarming);
         vanguardDb.child(responseId).child("sectionA").setValue(response);
 
         Intent intent = new Intent(SectionA.this, SectionB.class);

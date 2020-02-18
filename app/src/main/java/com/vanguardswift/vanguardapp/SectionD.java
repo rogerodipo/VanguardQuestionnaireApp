@@ -23,91 +23,61 @@ import java.util.Random;
 
 public class SectionD extends AppCompatActivity {
 
-    RadioGroup rg_motivation;
-    RadioGroup rg_knowledge_src;
-    RadioGroup rg_honey_sales;
-    RadioGroup rg_other_products;
-    RadioGroup rg_planning_b4_season;
-    RadioGroup rg_write_planning;
-    RadioGroup rg_maintain_records;
-    RadioGroup rg_desire_more_income;
-    RadioGroup rg_beekeeping_is_profitable;
-    RadioGroup rg_desire_to_reach_new_markets;
-    RadioGroup rg_planning_is_important;
-    RadioGroup rg_knowledge_is_adequate;
-    RadioGroup rg_would_like_deeper_understanding;
+    RadioGroup rg_apiary;
+    EditText traditional_number_of_hives_text;
+    EditText kenya_top_number_of_hives_text;
+    EditText langstroth_number_of_hives_text;
+    EditText kal_number_of_hives_text;
 
-    EditText motivation_to_start_text;
-    EditText other_knowledge_src_text;
-    CheckBox cb_beeswax;
-    CheckBox cb_propolis;
-    EditText other_bee_products_text;
+    EditText traditional_yield_s1_text;
+    EditText traditional_yield_s2_text;
 
-    CheckBox cb_sell_within_village;
-    CheckBox cb_sell_to_broker;
-    CheckBox cb_direct_to_consumer;
-    CheckBox cb_honey_processor;
-    CheckBox cb_cooperative;
+    EditText langstroth_yield_s1_text;
+    EditText langstroth_yield_s2_text;
 
-    EditText other_places_to_sell_text;
+    EditText kenya_top_yield_s1_text;
+    EditText kenya_top_yield_s2_text;
 
-    CheckBox cb_newspapers;
-    CheckBox cb_television;
-    CheckBox cb_radio;
-    CheckBox cb_internet;
-    CheckBox cb_social_media;
-    CheckBox cb_fellow_farmers;
-    CheckBox cb_farmer_groups;
-    CheckBox cb_extension_workers;
-    CheckBox cb_private_sector;
-    CheckBox cb_ngo_institutions;
+    EditText kal_yield_s1_text;
+    EditText kal_yield_s2_text;
 
-    EditText other_sources_of_info_text;
+    RadioGroup rg_use_tools;
+    RadioGroup rg_protective_suit;
+    RadioGroup rg_clean;
+    RadioGroup rg_clear_bushes;
+    RadioGroup rg_inspection;
+    RadioGroup rg_ipm;
+    RadioGroup rg_water_for_bees;
+    RadioGroup rg_supp_sugar;
+    RadioGroup rg_forage;
 
-    String motivation= "";
-    String knowledge_src= "";
-    String honey_sales= "";
-    String other_products= "";
-    String planning_b4_season= "";
-    String write_planning= "";
-    String maintain_records= "";
-    String desire_more_income= "";
-    String beekeeping_is_profitable= "";
-    String desire_to_reach_new_markets= "";
-    String planning_is_important= "";
-    String knowledge_is_adequate= "";
-    String would_like_deeper_understanding= "";
+    String apiary = "";
+    String traditional_number_of_hives = "";
+    String kenya_top_number_of_hives = "";
+    String langstroth_number_of_hives = "";
+    String kal_number_of_hives = "";
+    String traditional_yield_s1 = "";
+    String traditional_yield_s2 = "";
+    String langstroth_yield_s1 = "";
+    String langstroth_yield_s2 = "";
+    String kenya_top_yeild_s1 = "";
+    String kenya_top_yeild_s2 = "";
+    String kal_yield_s1 = "";
+    String kal_yield_s2 = "";
+    String use_tools = "";
+    String protective_suit = "";
+    String clean = "";
+    String clear_bushes = "";
+    String inspection = "";
+    String ipm = "";
+    String water_for_bees = "";
+    String supp_sugar = "";
+    String forage = "";
 
-    String  motivation_to_start= "";
-    String  other_knowledge_src= "";
-    String beeswax= "";
-    String propolis= "";
-    String  other_bee_products= "";
-
-    String sell_within_village= "";
-    String sell_to_broker= "";
-    String direct_to_consumer= "";
-    String honey_processor= "";
-    String cooperative= "";
-
-    String  other_places_to_sell= "";
-
-    String newspapers= "";
-    String television= "";
-    String radio= "";
-    String internet= "";
-    String social_media= "";
-    String fellow_farmers= "";
-    String farmer_groups= "";
-    String extension_workers= "";
-    String private_sector= "";
-    String ngo_institutions= "";
-
-    String  other_sources_of_info= "";
 
     DatabaseReference vanguardDb;
-    @Override
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_section_d);
@@ -117,195 +87,135 @@ public class SectionD extends AppCompatActivity {
 
         vanguardDb = FirebaseDatabase.getInstance().getReference("");
 
+        rg_apiary = findViewById(R.id.rg_apiary);
+        traditional_number_of_hives_text = findViewById(R.id.traditional_number_of_hives);
+        kenya_top_number_of_hives_text = findViewById(R.id.kenya_top_number_of_hives);
+        langstroth_number_of_hives_text = findViewById(R.id.langstroth_number_of_hives);
+        kal_number_of_hives_text = findViewById(R.id.kal_number_of_hives);
 
-         rg_motivation= findViewById(R.id.rg_motivation);
-         rg_knowledge_src= findViewById(R.id.rg_knowledge_src);
-         rg_honey_sales= findViewById(R.id.rg_honey_sales);
-         rg_other_products= findViewById(R.id.rg_other_products);
-         rg_planning_b4_season= findViewById(R.id.rg_planning_b4_season);
-         rg_write_planning= findViewById(R.id.rg_write_planning);
-         rg_maintain_records= findViewById(R.id.rg_maintain_records);
-         rg_desire_more_income= findViewById(R.id.rg_desire_more_income);
-         rg_beekeeping_is_profitable= findViewById(R.id.rg_beekeeping_is_profitable);
-         rg_desire_to_reach_new_markets= findViewById(R.id.rg_desire_to_reach_new_markets);
-         rg_planning_is_important= findViewById(R.id.rg_planning_is_important);
-         rg_knowledge_is_adequate= findViewById(R.id.rg_knowledge_is_adequate);
-         rg_would_like_deeper_understanding= findViewById(R.id.rg_would_like_deeper_understanding);
+        traditional_yield_s1_text = findViewById(R.id.traditional_yield_s1);
+        traditional_yield_s2_text = findViewById(R.id.traditional_yield_s2);
 
-        cb_beeswax= findViewById(R.id.cb_beeswax);
-        cb_propolis= findViewById(R.id.cb_propolis);
-        other_bee_products_text= findViewById(R.id.other_bee_products_text);
+        langstroth_yield_s1_text = findViewById(R.id.langstroth_yield_s1);
+        langstroth_yield_s2_text = findViewById(R.id.langstroth_yield_s2);
 
-        cb_sell_within_village= findViewById(R.id.cb_sell_within_village);
-        cb_sell_to_broker= findViewById(R.id.cb_sell_to_broker);
-        cb_direct_to_consumer= findViewById(R.id.cb_direct_to_consumer);
-        cb_honey_processor= findViewById(R.id.cb_honey_processor);
-        cb_cooperative= findViewById(R.id.cb_cooperative);
+        kenya_top_yield_s1_text = findViewById(R.id.kenya_top_yield_s1);
+        kenya_top_yield_s2_text = findViewById(R.id.kenya_top_yield_s2);
 
-        other_places_to_sell_text= findViewById(R.id.other_places_to_sell_text);
-        motivation_to_start_text = findViewById(R.id.motivation_to_start_text);
-        other_knowledge_src_text = findViewById(R.id.other_knowledge_src_text);
+        kal_yield_s1_text = findViewById(R.id.kal_yield_s1);
+        kal_yield_s2_text = findViewById(R.id.kal_yield_s2);
 
-        cb_newspapers= findViewById(R.id.cb_newspapers);
-        cb_television= findViewById(R.id.cb_television);
-        cb_radio= findViewById(R.id.cb_radio);
-        cb_internet= findViewById(R.id.cb_internet);
-        cb_social_media= findViewById(R.id.cb_social_media);
-        cb_fellow_farmers= findViewById(R.id.cb_fellow_farmers);
-        cb_farmer_groups= findViewById(R.id.cb_farmer_groups);
-        cb_extension_workers= findViewById(R.id.cb_extension_workers);
-        cb_private_sector= findViewById(R.id.cb_private_sector);
-        cb_ngo_institutions= findViewById(R.id.cb_ngo_institutions);
-
-        other_sources_of_info_text= findViewById(R.id.other_sources_of_info_text);
-
+        rg_use_tools = findViewById(R.id.rg_use_tools);
+        rg_protective_suit = findViewById(R.id.rg_protective_suit);
+        rg_clean = findViewById(R.id.rg_clean);
+        rg_clear_bushes = findViewById(R.id.rg_clear_bushes);
+        rg_inspection = findViewById(R.id.rg_inspection);
+        rg_ipm = findViewById(R.id.rg_ipm);
+        rg_water_for_bees = findViewById(R.id.rg_water_for_bees);
+        rg_supp_sugar = findViewById(R.id.rg_supp_sugar);
+        rg_forage = findViewById(R.id.rg_forage);
 
 
     }
 
-    public void rg_motivation(View view) {
-        int radioId = rg_motivation.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        motivation = genderButton.getText().toString();
+    public void rg_apiary(View view) {
+        int radioId = rg_apiary.getCheckedRadioButtonId();
+        RadioButton button = findViewById(radioId);
+        apiary = button.getText().toString();
     }
 
-    public void rg_knowledge_src(View view) {
-        int radioId = rg_knowledge_src.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        knowledge_src = genderButton.getText().toString();
+    public void rg_use_tools(View view) {
+        int radioId = rg_use_tools.getCheckedRadioButtonId();
+        RadioButton button = findViewById(radioId);
+        use_tools = button.getText().toString();
     }
 
-    public void rg_honey_sales(View view) {
-        int radioId = rg_honey_sales.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        honey_sales = genderButton.getText().toString();
+    public void rg_protective_suit(View view) {
+        int radioId = rg_protective_suit.getCheckedRadioButtonId();
+        RadioButton button = findViewById(radioId);
+        protective_suit = button.getText().toString();
     }
 
-    public void rg_other_products(View view) {
-        int radioId = rg_other_products.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        other_products = genderButton.getText().toString();
+    public void rg_clean(View view) {
+        int radioId = rg_clean.getCheckedRadioButtonId();
+        RadioButton button = findViewById(radioId);
+        clean = button.getText().toString();
     }
 
-    public void rg_planning_b4_season(View view) {
-        int radioId = rg_planning_b4_season.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        planning_b4_season = genderButton.getText().toString();
+    public void rg_clear_bushes(View view) {
+        int radioId = rg_clear_bushes.getCheckedRadioButtonId();
+        RadioButton button = findViewById(radioId);
+        clear_bushes = button.getText().toString();
     }
 
-    public void rg_write_planning(View view) {
-        int radioId = rg_write_planning.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        write_planning = genderButton.getText().toString();
+    public void rg_inspection(View view) {
+        int radioId = rg_inspection.getCheckedRadioButtonId();
+        RadioButton button = findViewById(radioId);
+        inspection = button.getText().toString();
     }
 
-    public void rg_maintain_records(View view) {
-
-        int radioId = rg_maintain_records.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        maintain_records = genderButton.getText().toString();
+    public void rg_ipm(View view) {
+        int radioId = rg_ipm.getCheckedRadioButtonId();
+        RadioButton button = findViewById(radioId);
+        ipm = button.getText().toString();
     }
 
-    public void rg_desire_more_income(View view) {
-        int radioId = rg_desire_more_income.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        desire_more_income = genderButton.getText().toString();
+    public void rg_water_for_bees(View view) {
+        int radioId = rg_water_for_bees.getCheckedRadioButtonId();
+        RadioButton button = findViewById(radioId);
+        water_for_bees = button.getText().toString();
     }
 
-    public void rg_beekeeping_is_profitable(View view) {
-        int radioId = rg_beekeeping_is_profitable.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        beekeeping_is_profitable = genderButton.getText().toString();
-    }
-
-    public void rg_desire_to_reach_new_markets(View view) {
-        int radioId = rg_desire_to_reach_new_markets.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        desire_to_reach_new_markets = genderButton.getText().toString();
-    }
-
-    public void rg_planning_is_important(View view) {
-
-        int radioId = rg_planning_is_important.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        planning_is_important = genderButton.getText().toString();
-    }
-
-    public void rg_knowledge_is_adequate(View view) {
-        int radioId = rg_knowledge_is_adequate.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        knowledge_is_adequate = genderButton.getText().toString();
-    }
-
-    public void rg_would_like_deeper_understanding(View view) {
-        int radioId = rg_would_like_deeper_understanding.getCheckedRadioButtonId();
-        RadioButton genderButton = findViewById(radioId);
-        would_like_deeper_understanding = genderButton.getText().toString();
+    public void rg_supp_sugar(View view) {
+        int radioId = rg_supp_sugar.getCheckedRadioButtonId();
+        RadioButton button = findViewById(radioId);
+        supp_sugar = button.getText().toString();
     }
 
 
-    public void onSubmit(View v){
+    public void rg_forage(View view) {
+        int radioId = rg_forage.getCheckedRadioButtonId();
+        RadioButton button = findViewById(radioId);
+        forage = button.getText().toString();
+    }
 
-        beeswax = String.valueOf(cb_beeswax.isChecked());
-        propolis = String.valueOf(cb_propolis.isChecked());
+    public void onSubmit(View v) {
 
-        sell_within_village = String.valueOf(cb_sell_within_village.isChecked());
-        sell_to_broker = String.valueOf(cb_sell_to_broker.isChecked());
-        direct_to_consumer = String.valueOf(cb_direct_to_consumer.isChecked());
-        honey_processor = String.valueOf(cb_honey_processor.isChecked());
-        cooperative = String.valueOf(cb_cooperative.isChecked());
+        traditional_number_of_hives = traditional_number_of_hives_text.getText().toString();
+        kenya_top_number_of_hives = kenya_top_number_of_hives_text.getText().toString();
+        langstroth_number_of_hives = langstroth_number_of_hives_text.getText().toString();
+        kal_number_of_hives = kal_number_of_hives_text.getText().toString();
+        traditional_yield_s1 = traditional_yield_s1_text.getText().toString();
+        traditional_yield_s2 = traditional_yield_s2_text.getText().toString();
+        kenya_top_yeild_s1 = kenya_top_yield_s1_text.getText().toString();
+        kenya_top_yeild_s2 = kenya_top_yield_s2_text.getText().toString();
+        langstroth_yield_s1 = langstroth_yield_s1_text.getText().toString();
+        langstroth_yield_s2 = langstroth_yield_s2_text.getText().toString();
+        kal_yield_s1 = kal_yield_s1_text.getText().toString();
+        kal_yield_s2 = kal_yield_s2_text.getText().toString();
 
-        newspapers = String.valueOf(cb_newspapers.isChecked());
-        television = String.valueOf(cb_television.isChecked());
-        radio = String.valueOf(cb_radio.isChecked());
-        internet = String.valueOf(cb_internet.isChecked());
-        social_media = String.valueOf(cb_social_media.isChecked());
-        fellow_farmers = String.valueOf(cb_fellow_farmers.isChecked());
-        farmer_groups = String.valueOf(cb_farmer_groups.isChecked());
-        extension_workers = String.valueOf(cb_extension_workers.isChecked());
-        private_sector = String.valueOf(cb_private_sector.isChecked());
-        ngo_institutions = String.valueOf(cb_ngo_institutions .isChecked());
-
-
-        motivation_to_start = motivation_to_start_text.getText().toString();
-        other_knowledge_src = other_knowledge_src_text.getText().toString();
-        other_bee_products = other_bee_products_text.getText().toString();
-        other_places_to_sell = other_places_to_sell_text.getText().toString();
-        other_sources_of_info = other_sources_of_info_text.getText().toString();
-        
-        ResponseD response = new ResponseD( motivation,
-                knowledge_src,
-                honey_sales,
-                other_products,
-                beeswax,
-                propolis,
-                other_bee_products,
-                sell_within_village,
-                sell_to_broker,
-                direct_to_consumer,
-                honey_processor,
-                cooperative,
-                other_places_to_sell,
-                planning_b4_season,
-                write_planning,
-                maintain_records,
-                newspapers,
-                television,
-                radio,
-                internet,
-                social_media,
-                fellow_farmers,
-                farmer_groups,
-                extension_workers,
-                private_sector,
-                ngo_institutions,
-                other_sources_of_info,
-                desire_more_income,
-                beekeeping_is_profitable,
-                desire_to_reach_new_markets,
-                planning_is_important,
-                knowledge_is_adequate,
-                would_like_deeper_understanding);
+        ResponseD response = new ResponseD(apiary,
+                traditional_number_of_hives,
+                kenya_top_number_of_hives,
+                langstroth_number_of_hives,
+                kal_number_of_hives,
+                traditional_yield_s1,
+                traditional_yield_s2,
+                langstroth_yield_s1,
+                langstroth_yield_s2,
+                kenya_top_yeild_s1,
+                kenya_top_yeild_s2,
+                kal_yield_s1,
+                kal_yield_s2,
+                use_tools,
+                protective_suit,
+                clean,
+                clear_bushes,
+                inspection,
+                ipm,
+                water_for_bees,
+                supp_sugar,
+                forage);
 
         SharedPreferences preferences = this.getSharedPreferences("com.vanguardswift.vanguardapp", Context.MODE_PRIVATE);
         String responseId = preferences.getString("responseId", String.valueOf((new Random()).nextInt(10000)));
@@ -315,7 +225,6 @@ public class SectionD extends AppCompatActivity {
         Intent intent = new Intent(SectionD.this, SectionE.class);
         SectionD.this.startActivity(intent);
     }
-
 
 
 }

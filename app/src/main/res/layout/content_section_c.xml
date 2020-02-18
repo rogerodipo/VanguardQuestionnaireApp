@@ -18,9 +18,9 @@
         <TextView
 
             style="@android:style/TextAppearance.Large"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Section C"
+            android:text="Section C: Psychological Factors"
             android:textAlignment="center"
             android:textColor="@color/black" />
 
@@ -28,151 +28,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
-            android:layout_marginBottom="12dp"
-            android:text="17.	Have you participated in beekeeping training?"
+            android:text="Level of participation in beekeeping extension activities"
             android:textColor="@color/black"
             android:textSize="18sp" />
-
-        <RadioGroup
-            android:id="@+id/rg_training"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:orientation="horizontal">
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_training"
-                android:layout_weight="1"
-                android:text="Yes" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="rg_training"
-                android:text="No" />
-
-        </RadioGroup>
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="12dp"
-            android:text="18.	Have you visited other beekeeping farms?"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <RadioGroup
-            android:id="@+id/rg_visited_farms"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:orientation="horizontal">
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_visited_farms"
-                android:layout_weight="1"
-                android:text="Yes" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_visited_farms"
-                android:layout_weight="1"
-                android:text="No" />
-
-        </RadioGroup>
+            android:layout_marginTop="12dp"
+            android:text="Economic orientation"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="12dp"
-            android:text="19.	Have you received training on entrepreneurship skills?"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:text="Beekeeping farming is profitable, and I can make a living out of it." />
 
         <RadioGroup
-            android:id="@+id/rg_entrepreneurship_training"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:orientation="horizontal">
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_entrepreneurship_training"
-                android:layout_weight="1"
-                android:text="Yes" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_entrepreneurship_training"
-                android:layout_weight="1"
-                android:text="No" />
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="12dp"
-            android:text="20.	Are you a member of a beekeeping farmers group?"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <RadioGroup
-            android:id="@+id/rg_farmers_group_member"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:orientation="horizontal">
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_farmers_group_member"
-                android:layout_weight="1"
-                android:text="Yes" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_farmers_group_member"
-                android:layout_weight="1"
-                android:text="No" />
-
-        </RadioGroup>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="12dp"
-            android:text="21.	If yes, how often do you attend meetings?"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <RadioGroup
-            android:id="@+id/rg_attendance_freq"
+            android:id="@+id/rg_profitable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
@@ -180,262 +54,91 @@
             <RadioButton
 
                 android:layout_width="wrap_content"
-                android:onClick="rg_attendance_freq"
                 android:layout_height="match_parent"
-                android:text="Weekly" />
+                android:onClick="rg_profitable"
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
-                android:onClick="rg_attendance_freq"
                 android:layout_height="match_parent"
-                android:text="Fortnightly" />
+                android:onClick="rg_profitable"
+                android:text="To a small extent   (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
-                android:onClick="rg_attendance_freq"
                 android:layout_height="match_parent"
-                android:text="Monthly" />
+                android:onClick="rg_profitable"
+                android:text="To a moderate extent  (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
-                android:onClick="rg_attendance_freq"
                 android:layout_height="match_parent"
-                android:text="Quarterly" />
+                android:onClick="rg_profitable"
+                android:text="To a great extent  (4)" />
 
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:onClick="rg_attendance_freq"
-                android:layout_height="match_parent"
-                android:text="Annually" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:onClick="rg_attendance_freq"
-                android:layout_height="match_parent"
-                android:text="Never" />
 
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="12dp"
-            android:text="22.	Which institutions support you in beekeeping activities? Kindly Indicate where appropriate "
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:layout_marginTop="18dp"
+            android:text="I highly desire to gain more income from my bee farming activities." />
 
-        <CheckBox
-
-            android:id="@+id/cb_farmer_to_farmer_groups"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Farmer to Farmer Groups" />
-
-        <CheckBox
-            android:id="@+id/cb_government"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Government" />
-
-        <CheckBox
-            android:id="@+id/cb_pvt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Private sector eg processor, input providers, financial sector" />
-
-        <CheckBox
-            android:id="@+id/cb_ngo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="NGO" />
-
-        <CheckBox
-            android:id="@+id/cb_other"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Other" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="12dp"
-            android:text="23.	Have you    needed credit facilities in the past to assist in bee farm operations?"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
 
         <RadioGroup
-
-            android:id="@+id/rg_need_credit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_need_credit"
-                android:layout_weight="1"
-
-                android:text="Yes" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_need_credit"
-                android:layout_weight="1"
-                android:text="No" />
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="12dp"
-            android:text="24.	If yes, "
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="i.	Did you receive it?" />
-
-        <RadioGroup
-            android:id="@+id/rg_use_brush"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rb_use_brush_yes"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_use_brush"
-                android:layout_weight="1"
-                android:text="Yes" />
-
-            <RadioButton
-                android:id="@+id/rb_use_brush_no"
-                android:layout_width="wrap_content"
-                android:onClick="rg_use_brush"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="No" />
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ii.	Was it sufficient?" />
-
-        <RadioGroup
-
-            android:id="@+id/rg_sufficient_credit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:orientation="horizontal">
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_sufficient_credit"
-                android:layout_weight="1"
-                android:text="Yes" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_sufficient_credit"
-                android:layout_weight="1"
-                android:text="No" />
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="12dp"
-            android:text="What was your source of credit? Kindly select"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <RadioGroup
-            android:id="@+id/rg_credit_source"
-
+            android:id="@+id/rg_desire_more_income"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="rg_desire_more_income"
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_credit_source"
-                android:text="Friends" />
+                android:onClick="rg_desire_more_income"
+                android:text="To a small extent   (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_credit_source"
-                android:text="Farmers Group" />
+                android:onClick="rg_desire_more_income"
+                android:text="To a moderate extent  (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_credit_source"
-                android:text="Input Supplier" />
+                android:onClick="rg_desire_more_income"
+                android:text="To a great extent  (4)" />
 
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_credit_source"
-                android:text="Financial Institutions" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_credit_source"
-                android:text="Others" />
 
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="12dp"
-            android:text="25.	Kindly indicate, on a level of  0 to 3,  0 (not all) to 3 (Great Extend) your level of agreement with the following statements."
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:layout_marginTop="12dp"
+            android:text="Market Orientation"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="My network within the community (involving other farmers, buyers, lenders and other parties) has an effect on my productivity" />
+            android:text="I produce honey for the market" />
 
         <RadioGroup
-            android:id="@+id/rg_network_effect"
+            android:id="@+id/rg_for_market"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
@@ -444,42 +147,42 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_network_effect"
-                android:text="0 (Not at all)" />
+                android:onClick="rg_for_market"
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_network_effect"
-                android:text="1 (Small Extent)" />
+                android:onClick="rg_for_market"
+                android:text="To a small extent   (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_network_effect"
-                android:text="2 (Moderate extent)" />
+                android:onClick="rg_for_market"
+                android:text="To a moderate extent  (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_network_effect"
-                android:text="3 (Great Extent)" />
+                android:onClick="rg_for_market"
+                android:text="To a great extent  (4)" />
 
 
         </RadioGroup>
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Cultural norms promote beekeeping" />
+            android:layout_marginTop="18dp"
+            android:text="I would like to distribute my product to new client markets" />
 
         <RadioGroup
-
-            android:id="@+id/rg_cultural_effect"
+            android:id="@+id/rg_new_markets"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
@@ -488,160 +191,30 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_cultural_effect"
-                android:text="0 (Not at all)" />
+                android:onClick="rg_new_markets"
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_cultural_effect"
-                android:text="1 (Small Extent)" />
+                android:onClick="rg_new_markets"
+                android:text="To a small extent   (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_cultural_effect"
-                android:text="2 (Moderate extent)" />
+                android:onClick="rg_new_markets"
+                android:text="To a moderate extent  (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:onClick="rg_cultural_effect"
-                android:text="3 (Great Extent)" />
+                android:onClick="rg_new_markets"
+                android:text="To a great extent  (4)" />
 
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Social support system involving family, friends, colleagues, neighbors, and/or community organizations are useful in advancing bee farming in my region " />
-
-        <RadioGroup
-
-            android:id="@+id/rg_social_effect"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-           >
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_social_effect"
-                android:text="0 (Not at all)" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_social_effect"
-                android:text="1 (Small Extent)" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_social_effect"
-                android:text="2 (Moderate extent)" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_social_effect"
-                android:text="3 (Great Extent)" />
-
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Local credit funding institutions provide funding to bee farmers" />
-
-        <RadioGroup
-            android:id="@+id/rg_credit_effect"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_credit_effect"
-                android:text="0 (Not at all)" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_credit_effect"
-                android:text="1 (Small Extent)" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_credit_effect"
-                android:text="2 (Moderate extent)" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="rg_credit_effect"
-                android:text="3 (Great Extent)" />
-
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Local partnerships through such efforts as partnership/chamas/harambees are essential in advancing bee farming" />
-
-        <RadioGroup
-
-            android:id="@+id/rg_partnership_effect"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="partnership_effect"
-                android:text="0 (Not at all)" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="partnership_effect"
-                android:text="1 (Small Extent)" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="partnership_effect"
-                android:text="2 (Moderate extent)" />
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:onClick="partnership_effect"
-                android:text="3 (Great Extent)" />
 
         </RadioGroup>
 
