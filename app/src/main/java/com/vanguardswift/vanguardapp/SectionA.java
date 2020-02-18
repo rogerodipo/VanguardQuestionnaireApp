@@ -47,6 +47,7 @@ public class SectionA extends AppCompatActivity {
         setContentView(R.layout.activity_section_a);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Section A: Personal Characteristics");
 
 
         vanguardDb = FirebaseDatabase.getInstance().getReference("");

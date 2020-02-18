@@ -16,20 +16,9 @@
         android:orientation="vertical">
 
 
-
-        <TextView
-
-            style="@android:style/TextAppearance.Large"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Section B: Socio-Economic Characteristics"
-            android:textAlignment="center"
-            android:textColor="@color/black" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
             android:text="Annual Income (KES)"
             android:textColor="@color/black"
             android:textSize="18sp" />

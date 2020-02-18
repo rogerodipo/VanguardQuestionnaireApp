@@ -83,6 +83,7 @@ public class SectionD extends AppCompatActivity {
         setContentView(R.layout.activity_section_d);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Section D: Bee Farm Characteristics");
 
 
         vanguardDb = FirebaseDatabase.getInstance().getReference("");

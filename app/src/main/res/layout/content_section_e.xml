@@ -15,28 +15,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-
-            style="@android:style/TextAppearance.Large"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Section E : Entrepreneurial Behaviour"
-            android:textAlignment="center"
-            android:textColor="@color/black" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
             android:layout_marginBottom="12dp"
-            android:text="15.	Kindly indicate, on a level of 1 to 4, 1(not all) to 4 (To a great extend) your level of agreement with the following statements"
+            android:text="Kindly indicate, on a level of 1 to 4, 1(not all) to 4 (To a great extend) your level of agreement with the following statements"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
             android:text="I generally use improved beekeeping equipment to create value in my bee keeping practice  " />
 
         <RadioGroup
@@ -50,28 +40,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_create_value"
-                android:text="0 (Not at all)" />
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:onClick="rg_create_value"
                 android:layout_height="match_parent"
-                android:text="1 (To a small Extent)" />
+                android:text="To a small extent (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:onClick="rg_create_value"
                 android:layout_height="match_parent"
-                android:text="2 (To a moderate extent)" />
+                android:text="To a moderate extent (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:onClick="rg_create_value"
                 android:layout_height="match_parent"
-                android:text="3 (To a great Extent)" />
+                android:text="To a great extent (4)" />
 
 
         </RadioGroup>
@@ -93,28 +83,28 @@
                 android:layout_width="wrap_content"
                 android:onClick="rg_apply_new"
                 android:layout_height="match_parent"
-                android:text="0 (Not at all)" />
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:onClick="rg_apply_new"
                 android:layout_height="match_parent"
-                android:text="1 (To a small Extent)" />
+                android:text="To a small extent (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_apply_new"
-                android:text="2 (To a moderate extent)" />
+                android:text="To a moderate extent (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_apply_new"
-                android:text="3 (To a great Extent)" />
+                android:text="To a great extent (4)" />
 
 
         </RadioGroup>
@@ -137,28 +127,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_expand"
-                android:text="0 (Not at all)" />
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_expand"
-                android:text="1 (To a small Extent)" />
+                android:text="To a small extent (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_expand"
-                android:text="2 (To a moderate extent)" />
+                android:text="To a moderate extent (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_expand"
-                android:text="3 (To a great Extent)" />
+                android:text="To a great extent (4)" />
 
 
         </RadioGroup>
@@ -181,28 +171,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_invest"
-                android:text="0 (Not at all)" />
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_invest"
-                android:text="1 (To a small Extent)" />
+                android:text="To a small extent (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_invest"
-                android:text="2 (To a moderate extent)" />
+                android:text="To a moderate extent (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:onClick="rg_invest"
                 android:layout_height="match_parent"
-                android:text="3 (To a great Extent)" />
+                android:text="To a great extent (4)" />
 
 
         </RadioGroup>
@@ -225,28 +215,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_decisions"
-                android:text="0 (Not at all)" />
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_decisions"
-                android:text="1 (To a small Extent)" />
+                android:text="To a small extent (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_decisions"
-                android:text="2 (To a moderate extent)" />
+                android:text="To a moderate extent (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_decisions"
-                android:text="3 (To a great Extent)" />
+                android:text="To a great extent (4)" />
 
 
         </RadioGroup>
@@ -271,28 +261,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_options"
-                android:text="0 (Not at all)" />
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_options"
-                android:text="1 (To a small Extent)" />
+                android:text="To a small extent (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_options"
-                android:text="2 (To a moderate extent)" />
+                android:text="To a moderate extent (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_options"
-                android:text="3 (To a great Extent)" />
+                android:text="To a great extent (4)" />
 
 
         </RadioGroup>
@@ -315,28 +305,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_goals"
-                android:text="0 (Not at all)" />
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_goals"
-                android:text="1 (To a small Extent)" />
+                android:text="To a small extent (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_goals"
-                android:text="2 (To a moderate extent)" />
+                android:text="To a moderate extent (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_goals"
-                android:text="3 (To a great Extent)" />
+                android:text="To a great extent (4)" />
 
 
         </RadioGroup>
@@ -360,28 +350,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_hard_work"
-                android:text="0 (Not at all)" />
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_hard_work"
-                android:text="1 (To a small Extent)" />
+                android:text="To a small extent (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_hard_work"
-                android:text="2 (To a moderate extent)" />
+                android:text="To a moderate extent (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_hard_work"
-                android:text="3 (To a great Extent)" />
+                android:text="To a great extent (4)" />
 
 
         </RadioGroup>
@@ -405,28 +395,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_schedule"
-                android:text="0 (Not at all)" />
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_schedule"
-                android:text="1 (To a small Extent)" />
+                android:text="To a small extent (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_schedule"
-                android:text="2 (To a moderate extent)" />
+                android:text="To a moderate extent (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_schedule"
-                android:text="3 (To a great Extent)" />
+                android:text="To a great extent (4)" />
 
 
         </RadioGroup>
@@ -452,28 +442,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_anticipate"
-                android:text="0 (Not at all)" />
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_anticipate"
-                android:text="1 (To a small Extent)" />
+                android:text="To a small extent (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_anticipate"
-                android:text="2 (To a moderate extent)" />
+                android:text="To a moderate extent (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_anticipate"
-                android:text="3 (To a great Extent)" />
+                android:text="To a great extent (4)" />
 
 
         </RadioGroup>
@@ -497,28 +487,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_seek_out_info"
-                android:text="0 (Not at all)" />
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_seek_out_info"
-                android:text="1 (To a small Extent)" />
+                android:text="To a small extent (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_seek_out_info"
-                android:text="2 (To a moderate extent)" />
+                android:text="To a moderate extent (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_seek_out_info"
-                android:text="3 (To a great Extent)" />
+                android:text="To a great extent (4)" />
 
 
         </RadioGroup>
@@ -544,28 +534,28 @@ information (e.g. from the media)
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_many_sources"
-                android:text="0 (Not at all)" />
+                android:text="Not at all (1)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_many_sources"
-                android:text="1 (To a small Extent)" />
+                android:text="To a small extent (2)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_many_sources"
-                android:text="2 (To a moderate extent)" />
+                android:text="To a moderate extent (3)" />
 
             <RadioButton
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="rg_many_sources"
-                android:text="3 (To a Extent)" />
+                android:text="To a great extent (4)" />
 
 
         </RadioGroup>

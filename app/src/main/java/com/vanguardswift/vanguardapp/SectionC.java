@@ -38,6 +38,7 @@ String new_markets = "";
         setContentView(R.layout.activity_section_c);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Section C: Psychological Factors");
 
         vanguardDb = FirebaseDatabase.getInstance().getReference("");
 

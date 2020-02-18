@@ -15,22 +15,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
-        <TextView
-
-            style="@android:style/TextAppearance.Large"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Section D: Bee Farm Characteristics"
-            android:textAlignment="center"
-            android:textColor="@color/black" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
             android:text="Do you have an apiary?"
-            android:textColor="@color/black" />
+            />
 
         <RadioGroup
 
@@ -63,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Number of Hives"
-            android:textColor="@color/black" />
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/traditional_number_of_hives_label"
@@ -148,14 +137,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
             android:text="Honey Harvested (Yield in kg)"
-            android:textColor="@color/black"
+
             android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Traditional log beehive"
-            android:textColor="@color/black" />
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/traditional_yield_s1_label"
@@ -198,7 +187,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Langstroth beehive"
-            android:textColor="@color/black" />
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/langstroth_yield_s1_label"
@@ -242,7 +231,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Kenya Top"
-            android:textColor="@color/black" />
+            />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -286,7 +275,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Kalpulkul"
-            android:textColor="@color/black" />
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/kal_yield_s1_label"
@@ -329,7 +318,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
             android:text="Beekeeping Management Practices"
-            android:textColor="@color/black"
+
             android:textSize="18sp" />
 
 
@@ -337,7 +326,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Kindly indicate if you perform the following Bee hive/ Apiary Hygiene good management Practices"
-            android:textColor="@color/black"
+
           />
 
 
@@ -346,7 +335,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Do you use bee tools to harvest honey?"
-            android:textColor="@color/black" />
+            />
 
         <RadioGroup
             android:id="@+id/rg_use_tools"
@@ -394,7 +383,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Do you wear bee protective suit during honey harvesting?"
-            android:textColor="@color/black" />
+            />
 
         <RadioGroup
             android:id="@+id/rg_protective_suit"
@@ -442,7 +431,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Do you clean beehives?"
-            android:textColor="@color/black" />
+            />
 
         <RadioGroup
             android:id="@+id/rg_clean"
@@ -490,7 +479,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Do you clear bushes in the apiary or near hives?"
-            android:textColor="@color/black" />
+            />
 
         <RadioGroup
             android:id="@+id/rg_clear_bushes"
@@ -538,7 +527,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Do you conduct hive inspection?"
-            android:textColor="@color/black" />
+            />
 
         <RadioGroup
             android:id="@+id/rg_inspection"
@@ -587,7 +576,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Do you use Integrated Pest Management (IPM) on crop management?"
-            android:textColor="@color/black" />
+            />
 
         <RadioGroup
             android:id="@+id/rg_ipm"
@@ -635,7 +624,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Do you provide water to bees?"
-            android:textColor="@color/black" />
+            />
 
         <RadioGroup
             android:id="@+id/rg_water_for_bees"
@@ -683,7 +672,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Do you feed bees with supplementary sugar solution?"
-            android:textColor="@color/black" />
+            />
 
         <RadioGroup
             android:id="@+id/rg_supp_sugar"
@@ -731,7 +720,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Do you plant trees or vegetation that act as bee forage?"
-            android:textColor="@color/black" />
+            />
 
         <RadioGroup
             android:id="@+id/rg_forage"

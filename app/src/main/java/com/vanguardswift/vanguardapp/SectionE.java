@@ -61,6 +61,7 @@ public class SectionE extends AppCompatActivity {
         setContentView(R.layout.activity_section_e);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Section E: Entrepreneurial Behaviour");
 
 
         vanguardDb = FirebaseDatabase.getInstance().getReference("");

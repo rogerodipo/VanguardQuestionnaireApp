@@ -60,6 +60,7 @@ public class SectionB extends AppCompatActivity {
         setContentView(R.layout.activity_section_b);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Section B: Socio-Economic Characteristics");
 
 
         vanguardDb = FirebaseDatabase.getInstance().getReference("");
